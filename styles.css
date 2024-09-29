@@ -79,7 +79,7 @@ body {
     height: 18px;
 }
 
-#main-box {
+#main-box, .sign-in-box {
     background-color: #2c2c2c;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 30, 0.4), 0 0 20px rgba(0, 0, 60, 0.3);
@@ -178,4 +178,12 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+.output{
+    color:white;
+}
+
+.label{
+    color:white;
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Study Buddy</h1>
+    <div id="hamburger-menu">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+    <div id="menu-items" class="hidden">
+        <a href="#create-account"><span class="icon book-open"></span>My Library</a>
+        <a href="#login"><span class="icon file-text"></span>My Notes</a>
+        <a href="#profile"><span class="icon brain"></span>Study Stats</a>
+        <a href="#profile"><span class="icon award"></span>Achievements</a>
+    </div>
+    <div id="main-box">
+        <h2>Here is your quiz!</h2>
+        <p class ="output">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur nobis, cupiditate odio suscipit nulla magnam incidunt, quod commodi sunt maiores sed minima. Eligendi, quis iusto. Tempora in numquam voluptatem corrupti?</p>
+    </div>
+
+    <div class="sign-in-box">
+        <h2>Want to save your quizzes? Create an account.</h2>
+        <form method="post" action="/api/User">
+            <label for="UName" class = "label">User name:</label><br>
+            <input type="text" id="UName" name="UName" ><br>
+
+            <label for="email" class = "label">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="password" class = "label">Password</label><br>
+            <input type ="password" id ="pwd" name="pwd"><br>
+
+            <input type="submit" value="Submit">
+            <button class="make-account">Create Account</button>
+        </form>
+       
+    </div>
+
+    <div id="study-tip" class="hidden">
+        <div>
+            <strong>Study Tip:</strong>
+            <p id="tip-text"></p>
+        </div>
+        <button id="close-tip">×</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const studyTip = document.getElementById('study-tip');
     const tipText = document.getElementById('tip-text');
     const closeTip = document.getElementById('close-tip');
-
+    const createAcc = document.querySelector('.make-account');
     const studyTips = [
         "Break your study sessions into 25-minute focused intervals.",
         "Teach the material to someone else to reinforce your understanding.",
@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     generateQuizBtn.addEventListener('click', function() {
         // Here you would typically send the file to a server and get the generated quiz back
         // For this example, we'll just show an alert
+        location.href = "./results.html";
+        
         alert('Quiz generation would start here!');
     });
 
@@ -47,6 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
     closeTip.addEventListener('click', function() {
         studyTip.classList.add('hidden');
     });
+
+
+    const emailField = document.getElementById("email");
+    const userNameField = document.getElementById("UName");
+    const pwField = document.getElementById("pwd");
+    
+    // handle clicking of sign in button
+    createAcc.addEventListener('click', function(){
+        
+    })
 
     // Show a random tip when the page loads
     showRandomTip();
